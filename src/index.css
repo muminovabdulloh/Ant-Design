@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+:root{
+    --sidebar-width: 290px;
+    --navbar-height: 69px;
+    --color: #494b71;
+    --border: 1px solid #f0f0f0;
+    --shadow: 0px 0px 12px 0px rgba(73, 75, 116, 0.16);
+}

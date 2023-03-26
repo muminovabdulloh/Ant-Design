@@ -1,16 +1,40 @@
 import React from "react";
-import {navbar} from "./../../utils/navbar";
-import { NavLink } from "react-router-dom";
-import { Container } from "./style";
+
+import { navbar } from "./../../utils/navbar";
+import {
+  Container,
+  Link,
+  Contact,
+  LinkWrapper,
+  TitleLink,
+  Wrapper,
+  List,
+} from "./style";
 
 export const Navbar = () => {
   return (
     <Container>
-      {
-         navbar.map((value)=>(
-          <NavLink key={value.id} to={value.path}>{value.title}</NavLink>
-         ))
-      }
+      <TitleLink title to="/components">
+        AntD Library
+      </TitleLink>
+      <Wrapper>
+        <List>
+          {navbar.map((value) => (
+            <Link key={value.id} to={value.path}>
+              {value.title}
+            </Link>
+          ))}
+        </List>
+        <Contact>
+          <Contact.UserName>Mo'minov Abdulloh</Contact.UserName>
+          <a href="https://t.me/abdulloh021">
+            <Contact.Telegram />
+          </a>
+          <a href="https://github.com/muminovabdulloh">
+            <Contact.GitHub />
+          </a>
+        </Contact>
+      </Wrapper>
     </Container>
   );
 };

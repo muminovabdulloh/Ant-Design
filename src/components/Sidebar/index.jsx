@@ -1,17 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Container } from "./style";
-import {sidebar} from "./../../utils/sidebar"
+import { NavLink, Outlet } from "react-router-dom";
+import { Body, Container, Wrapper, Link } from "./style";
+import { sidebar } from "./../../utils/sidebar";
 
 export const Navbar = () => {
   return (
-    <Container>
-      {
-         sidebar.map((value)=>(
-          <NavLink key={value.id} to={value.path}>{value.title}</NavLink>
-         ))
-      }
-    </Container>
+    <Wrapper>
+      <Container>
+        {sidebar.map((value) => (
+          <Link key={value.id} to={value.path}>
+            {value.title}
+          </Link>
+        ))}
+      </Container>
+      <Body>
+        <Outlet />
+      </Body>
+    </Wrapper>
   );
 };
 
