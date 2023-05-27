@@ -21,6 +21,7 @@ overflow: auto ;
 
 const Body = styled.div`
 width: 100%;
+overflow-y: scroll;
 margin: 30px;
 padding: 20px;
 border-radius: 8px;

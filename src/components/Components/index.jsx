@@ -1,14 +1,14 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { ComponentsWrapper, PathLink } from "./style";
+import { sidebar } from "../../utils/sidebar";
 import { Container } from "./style";
 import Sidebar from "./../Sidebar";
+import { Outlet } from "react-router-dom";
 
 export const Generic = () => {
-  const location = useLocation();
   return (
     <Container>
-      <Sidebar />
-      {/* <h1>Generic {location.pathname} Component</h1> */}
+      <Sidebar/>
     </Container>
   );
 };

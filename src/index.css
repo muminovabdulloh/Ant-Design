@@ -12,4 +12,16 @@
     --color: #494b71;
     --border: 1px solid #f0f0f0;
     --shadow: 0px 0px 12px 0px rgba(73, 75, 116, 0.16);
+
+    /* colors */
+    --borderColor: #f0f0f0;
+    --btnColor: #fff;
+    --primary: #1677ff;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --danger: #dc3545;
+    --secondary: #6c757d;
+    --success: rgb(40, 167, 69);
+    --inputColor: #4096ff;
+
 }
